@@ -5,7 +5,7 @@
 <script>
 import { Jodit } from 'jodit'
 export default {
-    name: 'JoditEditor',
+    name: 'joditvue3',
     props: {
         editorOptions:{
             type:Object,

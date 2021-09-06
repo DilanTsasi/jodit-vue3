@@ -1,8 +1,8 @@
 {
   "name": "jodit-vue3",
-  "version": "0.9.2",
+  "version": "1.0.1",
   "private": false,
-  "main": "dist/jodit-vue3.umd.min.js",
+  "main": "src/editor.js",
   "unpkg": "dist/jodit-vue3.umd.min.js",
   "jsdelivr": "dist/jodit-vue3.umd.min.js",
   "author": "Dilan Tsasi",
@@ -32,11 +32,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name jodit-vue3 src/editor.js",
     "lint": "vue-cli-service lint",
-    "prepublishOnly": "%npm_execpath% build"
+    "prepublishOnly": "node \"%npm_execpath%\" build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "jodit": "^3.7.2"
+    "jodit": "^3.7.2",
+    "vue": "^3.2.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
